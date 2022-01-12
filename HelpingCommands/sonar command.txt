@@ -1,0 +1,1 @@
+mvn clean verify sonar:sonar -Dsonar.projectKey=stringbootapp -Dsonar.host.url=http://localhost:9000 -Dsonar.login=244d0eb8f76d7263627cba6626c0eff67c3af6c8

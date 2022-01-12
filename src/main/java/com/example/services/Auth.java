@@ -10,17 +10,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-
 import com.example.controllers.BookDataAcitvityPerform;
 import com.example.models.Book;
 
 import java.util.List;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-
 @RestController
 @RequestMapping
-
 
 public class Auth {
 
@@ -31,7 +28,7 @@ public class Auth {
 		// TODO Auto-generated constructor stub
 	}
 
-	@PostMapping("/login")
+	@PostMapping("/testlogin")
 	public String login(@RequestParam(name = "name") String name, @RequestParam(name = "password") String pass) {
 
 		String username = "Deepak";
@@ -51,7 +48,7 @@ public class Auth {
 		ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext(
 				"com/example/config/config.xml");
 
-		BookDataAcitvityPerform bean = applicationContext.getBean("bookDataPerform", BookDataAcitvityPerform.class);       
+		BookDataAcitvityPerform bean = applicationContext.getBean("bookDataPerform", BookDataAcitvityPerform.class);
 
 		Book login = new Book(id, name, desc);
 

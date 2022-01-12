@@ -1,11 +1,36 @@
 package com.example.models;
 
-import org.springframework.beans.factory.annotation.Value;
-
 public class User {
 	String name;
 	String email;
-	
+	int id;
+	String gender;
+	String password;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -19,12 +44,6 @@ public class User {
 	}
 
 	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public User(String name, String email) {
-		System.out.print(name);
-		this.name = name;
 		this.email = email;
 	}
 

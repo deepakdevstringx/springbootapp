@@ -26,10 +26,18 @@
 		</property>
 
 	</bean>
-	
-	<bean class="com.example.controllers.BookDataAcitvityPerform" name="bookDataPerform">
+
+	<bean class="com.example.controllers.BookDataAcitvityPerform"
+		name="bookDataPerform">
 		<property name="template">
-		<ref bean="template"/>
+			<ref bean="template" />
+		</property>
+	</bean>
+
+	<bean class="com.example.controllers.UserDatabaseControler"
+		name="UserDatabaseControler">
+		<property name="template">
+			<ref bean="template" />
 		</property>
 	</bean>
 
